@@ -23,9 +23,9 @@
  - Set up the network where mongodb instance communicate `docker network create mongo-cluster-network`
  - Set up our containers for our replica set 
     - **Important**: By default 1 replica set is composed of 3 running mongodb instance.
-    - docker run -p 30001:27017 --name mongo1 --net mongo-cluster-network mongo mongod --replSet mongo-local-set
-    - docker run -p 30002:27017 --name mongo2 --net mongo-cluster-network mongo mongod --replSet mongo-local-set
-    - docker run -p 30003:27017 --name mongo3 --net mongo-cluster-network mongo mongod --replSet mongo-local-set  
+    - `docker run -p 30001:27017 --name mongo1 --net mongo-cluster-network mongo mongod --replSet mongo-local-set`
+    - `docker run -p 30002:27017 --name mongo2 --net mongo-cluster-network mongo mongod --replSet mongo-local-set`
+    - `docker run -p 30003:27017 --name mongo3 --net mongo-cluster-network mongo mongod --replSet mongo-local-set`  
 
         - *** Legend ***
         - `docker run` : Start a container from an image
