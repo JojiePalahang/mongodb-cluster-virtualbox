@@ -50,3 +50,7 @@
 # Architecture Diagram
 
  ![Architecture](docs/architecture-diagram.png?raw=true)
+
+
+ # License
+ MIT
